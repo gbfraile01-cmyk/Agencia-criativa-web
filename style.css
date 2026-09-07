@@ -1,0 +1,454 @@
+/* =========================================
+RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* =========================================
+CONFIGURAÇÕES GERAIS
+========================================= */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+color: #333333;
+background-color: #ffffff;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+ul {
+list-style: none;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+
+/* =========================================
+CONTAINERS
+========================================= */
+
+.header__container,
+.hero__container,
+.about__container,
+.services__container,
+.contact__container,
+.footer__container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.header {
+background-color: #ffffff;
+border-bottom: 1px solid #e5e5e5;
+padding: 20px 0;
+}
+
+.header__container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header__logo {
+font-size: 24px;
+font-weight: 700;
+color: #6c63ff;
+}
+
+.header__menu {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.header__link {
+font-size: 16px;
+font-weight: 500;
+color: #333333;
+}
+
+.header__link:hover {
+color: #6c63ff;
+}
+
+/* =========================================
+BOTÕES
+========================================= */
+
+.button {
+display: inline-block;
+padding: 14px 28px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+transition: 0.3s ease;
+}
+
+.button--primary {
+color: #ffffff;
+background-color: #6c63ff;
+}
+
+.button--primary:hover {
+background-color: #5148d8;
+transform: translateY(-2px);
+}
+
+.button--secondary {
+color: #ffffff;
+background-color: #1f1f1f;
+}
+
+.button--secondary:hover {
+background-color: #6c63ff;
+transform: translateY(-2px);
+}
+
+/* =========================================
+HERO
+========================================= */
+
+.hero {
+padding: 120px 0;
+background-color: #f7f7f7;
+}
+
+.hero__content {
+max-width: 750px;
+}
+
+.hero__subtitle {
+display: block;
+margin-bottom: 16px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #6c63ff;
+}
+
+.hero__title {
+margin-bottom: 24px;
+font-size: 52px;
+line-height: 1.1;
+color: #1f1f1f;
+}
+
+.hero__description {
+max-width: 650px;
+margin-bottom: 32px;
+font-size: 18px;
+color: #666666;
+}
+
+/* =========================================
+SOBRE
+========================================= */
+
+.about {
+padding: 100px 0;
+background-color: #ffffff;
+}
+
+.about__content {
+max-width: 800px;
+}
+
+.about__subtitle {
+display: block;
+margin-bottom: 12px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #6c63ff;
+}
+
+.about__title {
+margin-bottom: 24px;
+font-size: 40px;
+line-height: 1.2;
+color: #1f1f1f;
+}
+
+.about__description {
+margin-bottom: 16px;
+font-size: 17px;
+color: #666666;
+}
+
+/* =========================================
+SERVIÇOS
+========================================= */
+
+.services {
+padding: 100px 0;
+background-color: #f7f7f7;
+}
+
+.services__header {
+max-width: 700px;
+margin-bottom: 50px;
+}
+
+.services__subtitle {
+display: block;
+margin-bottom: 12px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #6c63ff;
+}
+
+.services__title {
+margin-bottom: 16px;
+font-size: 40px;
+line-height: 1.2;
+color: #1f1f1f;
+}
+
+.services__description {
+font-size: 17px;
+color: #666666;
+}
+
+.services__list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+/* =========================================
+CARDS DE SERVIÇO
+========================================= */
+
+.service-card {
+background-color: #ffffff;
+border: 1px solid #e5e5e5;
+border-radius: 8px;
+transition: 0.3s ease;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-card__content {
+padding: 35px;
+}
+
+.service-card__number {
+display: block;
+margin-bottom: 20px;
+font-size: 14px;
+font-weight: 700;
+color: #6c63ff;
+}
+
+.service-card__title {
+margin-bottom: 16px;
+font-size: 24px;
+color: #1f1f1f;
+}
+
+.service-card__description {
+margin-bottom: 24px;
+font-size: 16px;
+color: #666666;
+}
+
+.service-card__link {
+font-size: 15px;
+font-weight: 700;
+color: #6c63ff;
+}
+
+.service-card__link:hover {
+color: #1f1f1f;
+}
+
+/* =========================================
+CONTATO
+========================================= */
+
+.contact {
+padding: 100px 0;
+background-color: #1f1f1f;
+}
+
+.contact__content {
+max-width: 800px;
+}
+
+.contact__subtitle {
+display: block;
+margin-bottom: 12px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #6c63ff;
+}
+
+.contact__title {
+margin-bottom: 24px;
+font-size: 40px;
+line-height: 1.2;
+color: #ffffff;
+}
+
+.contact__description {
+margin-bottom: 32px;
+font-size: 17px;
+color: #cccccc;
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+.footer {
+padding: 50px 0 30px;
+background-color: #111111;
+color: #ffffff;
+}
+
+.footer__content {
+padding-bottom: 30px;
+}
+
+.footer__logo {
+display: inline-block;
+margin-bottom: 10px;
+font-size: 22px;
+font-weight: 700;
+color: #6c63ff;
+}
+
+.footer__description {
+color: #aaaaaa;
+}
+
+.footer__bottom {
+padding-top: 25px;
+border-top: 1px solid #333333;
+}
+
+.footer__copyright {
+font-size: 14px;
+color: #888888;
+}
+
+/* =========================================
+RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+
+.services__list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__title {
+    font-size: 44px;
+}
+
+
+}
+
+@media (max-width: 650px) {
+
+
+.header__container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header__menu {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+.hero__title {
+    font-size: 36px;
+}
+
+.hero__description {
+    font-size: 16px;
+}
+
+.about,
+.services,
+.contact {
+    padding: 70px 0;
+}
+
+.about__title,
+.services__title,
+.contact__title {
+    font-size: 32px;
+}
+
+.services__list {
+    grid-template-columns: 1fr;
+}
+
+.service-card__content {
+    padding: 28px;
+}
+
+
+}
+
+@media (max-width: 400px) {
+
+
+.header__logo {
+    font-size: 20px;
+}
+
+.header__menu {
+    gap: 12px;
+}
+
+.header__link {
+    font-size: 14px;
+}
+
+.hero__title {
+    font-size: 30px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+}
